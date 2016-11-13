@@ -239,14 +239,14 @@ ifdef CM_BUILDTYPE
         endif
     endif
 else
-    # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
+    # If CM_BUILDTYPE is not defined, set to RPDROKY
+    CM_BUILDTYPE := RPDROKY
     CM_EXTRAVERSION :=
 endif
 
-ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
-    ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
-        CM_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
+ifeq ($(CM_BUILDTYPE), RPDROKY)
+    ifneq ($(TARGET_RPDROKY_BUILD_ID),)
+        CM_EXTRAVERSION := -$(TARGET_RPDROKY_BUILD_ID)
     endif
 endif
 
