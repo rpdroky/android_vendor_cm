@@ -267,3 +267,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/dnd/overlay/common
 -include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+
+# Squisher Location
+SQUISHER_SCRIPT := vendor/dnd/tools/squisher
