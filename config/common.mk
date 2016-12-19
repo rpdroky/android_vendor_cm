@@ -308,3 +308,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+
+# Squisher Location
+SQUISHER_SCRIPT := vendor/cm/tools/squisher
