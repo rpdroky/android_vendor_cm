@@ -231,7 +231,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=1
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
@@ -282,7 +282,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
+    CM_BUILDTYPE := RPDROKY
     CM_EXTRAVERSION :=
 endif
 
